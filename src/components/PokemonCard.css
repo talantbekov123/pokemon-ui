@@ -1,0 +1,94 @@
+/* Main Container for the whole map */
+.pokemon-map-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Modal Overlay for the Pokemon card */
+  .pokemon-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Pokemon card styled as a modal */
+  .pokemon-card-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  /* Pokemon image */
+  .pokemon-card-modal img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  /* Pokemon name */
+  .pokemon-card-modal h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  /* Price display */
+  .pokemon-card-modal p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+ 
+  /* Action Buttons */
+.action-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1;
+    text-align: center;
+  }
+
+
+  /* Responsive Design for Modal */
+  @media (max-width: 768px) {
+    .pokemon-card-modal {
+      width: 250px;
+      padding: 15px;
+    }
+  
+    .pokemon-card-modal img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    button, .go-button {
+      font-size: 14px;
+      padding: 10px 14px;
+    }
+  }
+  

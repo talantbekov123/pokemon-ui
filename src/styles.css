@@ -1,0 +1,71 @@
+/* General Styles */
+.page-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #4CAF50; /* Green color for the title */
+}
+
+.map-container {
+  margin: 0 auto;
+  border: 2px solid #4CAF50; /* Green border around the map */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Map Styles */
+.leaflet-container {
+  border-radius: 10px;
+}
+
+/* Popup Styles */
+.popup-content {
+  display: flex;
+  align-items: center;
+}
+
+.popup-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.popup-info {
+  text-align: left;
+}
+
+/* Caught Pokémon List Styles */
+.caught-pokemon-list {
+  margin: 20px auto;
+  padding: 0;
+  max-width: 600px;
+}
+
+.caught-pokemon-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.caught-pokemon-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.caught-pokemon-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

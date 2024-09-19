@@ -1,0 +1,205 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white; /* White background for the entire page */
+  color: #333;
+}
+
+.pokemons-page {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f7ff, #e1e4e8); /* Soft gradient background */
+  margin-left: 10px; /* Add margins on the left */
+  margin-right: 10px; /* Add margins on the right */
+}
+
+/* Page Title */
+h2 {
+  color: #005f73;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Pokemon List Container */
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two Pokémon per row */
+  gap: 20px;
+  width: 100%;
+  max-width: 800px; /* Limit the width of the Pokémon grid */
+  box-sizing: border-box;
+  padding-left: 10px; /* Padding to ensure space on mobile */
+  padding-right: 10px;
+}
+
+/* Individual Pokemon Card */
+.pokemon-card {
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.03);
+}
+
+/* Background colors based on elements */
+.pokemon-card.fire {
+  background-color: #ffcccb; /* Light red for Fire */
+}
+
+.pokemon-card.water {
+  background-color: #a8d5e2; /* Light blue for Water */
+}
+
+.pokemon-card.grass {
+  background-color: #c8e6c9; /* Light green for Grass */
+}
+
+.pokemon-card.electric {
+  background-color: #fff176; /* Light yellow for Electric */
+}
+
+.pokemon-card.normal {
+  background-color: #f0e68c; /* Khaki for Normal */
+}
+
+.pokemon-card.ghost {
+  background-color: #d8bfd8; /* Thistle for Ghost */
+}
+
+.pokemon-card.fighting {
+  background-color: #ffb74d; /* Light Orange for Fighting */
+}
+
+.pokemon-card.psychic {
+  background-color: #f48fb1; /* Pink for Psychic */
+}
+
+/* Pokemon Image Container */
+.pokemon-image-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.pokemon-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pokemon-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* Pokemon Info */
+.pokemon-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pokemon-info h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #005f73;
+  height: 40px; /* Fixed height for title */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pokemon-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex: 1;
+  text-align: center;
+}
+
+/* Sell Button */
+.sell {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.sell:hover {
+  background-color: #ff8787;
+  transform: translateY(-2px);
+}
+
+/* Upgrade Button */
+.upgrade {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.upgrade:hover {
+  background-color: #60c5f5;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .pokemon-list {
+    grid-template-columns: repeat(2, 1fr); /* Keep two per row on mobile */
+    gap: 15px;
+    padding-left: 10px; /* Padding to ensure space on mobile */
+    padding-right: 10px; /* Padding to ensure space on mobile */
+  }
+
+  .pokemon-card {
+    padding: 10px;
+  }
+
+  .pokemon-image-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    height: 40px; /* Fixed height for mobile */
+  }
+
+  .action-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
