@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './ReferralsPage.css';
+import './Referral.css';
 
-const ReferralsPage = () => {
+const Referral = () => {
   const [referralLink] = useState("https://example.com/referral/12345"); // Simulating the referral link
   const [referrals] = useState([
     { id: 1, name: 'JohnDoe', coinsGenerated: 150 },
@@ -76,4 +76,4 @@ const ReferralsPage = () => {
   );
 };
 
-export default ReferralsPage;
+export default Referral;

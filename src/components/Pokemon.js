@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './PokemonsPage.css';
+import './Pokemon.css';
 
-const PokemonsPage = () => {
+const Pokemon = () => {
   const [pokemons] = useState([
     {
       id: 1,
@@ -142,4 +142,4 @@ const PokemonsPage = () => {
   );
 };
 
-export default PokemonsPage;
+export default Pokemon;

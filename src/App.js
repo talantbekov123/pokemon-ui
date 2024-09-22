@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MapPage from './components/MapPage';
-import ReferralPage from './components/ReferralPage';
-import BottomNav from './components/BottomNav';
-import PokemonsPage from './components/PokemonsPage';
+import Map from './components/Map';
+import Referral from './components/Referral';
+import Nav from './components/Nav';
+import Pokemon from './components/Pokemon';
 import './App.css';
-import PokemonDetailsPage from './components/PokemonDetailsPage';
 
 
 const App = () => {
@@ -13,12 +12,11 @@ const App = () => {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/map" element={<MapPage />} />
-          <Route path="/pokemons" element={<PokemonsPage />} />
-          <Route path="/pokemon/:id" element={<PokemonDetailsPage />} />
-          <Route path="/referrals" element={<ReferralPage />} />
+          <Route path="/map" element={<Map />} />
+          <Route path="/pokemons" element={<Pokemon />} />
+          <Route path="/referrals" element={<Referral />} />
         </Routes>
-        <BottomNav />
+        <Nav />
       </div>
     </Router>
   );

@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GoogleMap, LoadScript, Marker, DirectionsRenderer } from '@react-google-maps/api';
 import { getDistance } from 'geolib';
 import axios from 'axios';
-import './PokemonCard.css';
+import './Map.css';
 
 const mapContainerStyle = {
   width: '100%',

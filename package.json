@@ -10,6 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@vis.gl/react-google-maps": "^1.2.0",
+    "axios": "^1.7.7",
     "geolib": "^3.3.4",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^3.6.0",
