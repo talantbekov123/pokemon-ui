@@ -89,6 +89,11 @@ const PokemonMap = () => {
     setShowModal(true);
   };
 
+
+  const handleClose = () => {
+    setShowModal(false);
+  }
+
   const handleTravelTime = (pokemon) => {
     const distanceMatrixService = new window.google.maps.DistanceMatrixService();
 
@@ -191,6 +196,7 @@ const PokemonMap = () => {
       {showModal && selectedPokemon && (
         <div className="pokemon-modal-overlay">
           <div className="pokemon-card-modal">
+            <button className="close-button" onClick={handleClose}>X</button> {/* Close button */}
             <img src={selectedPokemon.sprite} alt={selectedPokemon.name} />
             <h2>{selectedPokemon.name}</h2>
             <p>Sell Price: ${selectedPokemon.sellPrice}</p>
